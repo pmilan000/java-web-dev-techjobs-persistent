@@ -11,7 +11,7 @@ import java.util.List;
 public class Skill extends AbstractEntity {
 
     @NotNull
-    @Size(min=25, max=255, message="Must have description longer than 25 characters")
+    @Size(min=15, max=255, message="Must have description longer than 25 characters")
     private String description;
 
     @ManyToMany(mappedBy = "skills")
@@ -22,7 +22,7 @@ public class Skill extends AbstractEntity {
     public String getDescription() {
         return description;
     }
-    public void setDescription(String skillDescription) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
