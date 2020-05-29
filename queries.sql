@@ -3,17 +3,17 @@ SELECT *
 FROM employer, skill;
 
 ## Part 2: Test it with SQL
-SELECT *
+SELECT name
 FROM employer
-WHERE location = St. Louis City;
+WHERE location = St. Louis;
 
 ## Part 3: Test it with SQL
-DROP TABLE job
-FROM techjobs;
+DROP TABLE job;
 
 ## Part 4: Test it with SQL
 
 SELECT name, description
 FROM skill
-INNER JOIN job_skills ON skill.skill_id = job.skill_id
+INNER JOIN job_skills ON skill.id = job.skill_id
+WHERE job_id IS NOT NULL
 ORDER BY name ASC;
