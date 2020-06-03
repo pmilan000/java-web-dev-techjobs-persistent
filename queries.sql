@@ -2,9 +2,9 @@
 SELECT *
 FROM job
 
-//id - INTEGER
-//name - STRING
-//employer_id - INTEGER
+ -- id - INTEGER
+ -- name - STRING
+ -- employer_id - INTEGER
 
 
 ## Part 2: Test it with SQL
